@@ -10,13 +10,10 @@ const MailboxDetails = (props) => {
 
     return (
         <>
+            <h1>Mailbox {selectedBox._id}</h1>
             <h2>Details</h2>
-            <dl>
-                <dt>Box Owner</dt>
-                <dd>{selectedBox.boxOwner}</dd>
-                <dt>Box Size</dt>
-                <dd>{selectedBox.boxSize}</dd>
-            </dl>
+            <p>Boxholder: {selectedBox.boxOwner}</p>
+            <p>Box Size: {selectedBox.boxSize}</p>
         </>
     )
 }
